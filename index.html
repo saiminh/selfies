@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laureate selfies</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<style type="text/css">
+		body{		
+		}
+		h1, .container{
+			width:1000px;
+			margin: 1em auto;
+		}
+		.container{		
+			padding: 10px;
+			background-color: #EEE;
+			overflow:auto;
+		}
+		.imgwrap{
+			width:250px;
+			height: 166px;	
+			float: left;
+			overflow: hidden;
+			text-align: center;
+		}
+		.imgwrap img{
+			width:250px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Transformation of a man through 5 years of hard(ly any) work</h1>
+	<h2>
+	<div class="container">
+		
+	</div>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script type="text/javascript">
+	var dir = "Pictures/optimized/";
+	var fileextension = ".jpg";
+	$.ajax({
+	    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+	    url: dir,
+	    success: function (data) {
+	        //List all png file names in the page
+	        $(data).find("a:contains(" + fileextension + ")").each(function () {
+	            var filename = this.href.replace(window.location.host, "").replace("http:///", "");	            
+	            $(".container").append(
+	            	$("<div class=\"imgwrap\"><a href=" + dir + filename + "><img src=" + dir + filename + "></img></a></div>") 
+	            );
+	        });
+	    }
+	});
+ </script>
+	
+
+
+</body>
+</html>
