@@ -27,7 +27,7 @@
 			opacity: 1;
 		}
 
-		.imgwrap img{
+		.container img{
 			position: relative;
 		}
 		.date{
@@ -50,17 +50,23 @@
 <body>
 	<img class="llm-logo" src="img/LaurelLeaveMemories.svg" alt="Laurel Leave Memories" />
 	<div class="container">		
+		<img src="Pictures/rotate.php" alt="Header" />
 	</div>
 
- <script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
  <script type="text/javascript">
+ 	 $(".container > img").load( function(){
+            	$(".container").addClass("loaded");
+            	resizeImage();		
+            });    
+
 	var win = $(window);
 	
 	function resizeImage() {
 		var	winHeight = win.height(),
 			winWidth = win.width(),
 			winRatio = winWidth / winHeight,
-			image = $(".container > .imgwrap > img"),
+			image = $(".container > img"),
 			imageHeight = image.height(),
 			imageWidth = image.width(),
 			imageRatio = imageWidth / imageHeight;
@@ -83,31 +89,8 @@
 				left:  (winWidth / 2) - (newWidth / 2)
 			})
 		};
-	};
-
-	var dir = "Pictures/";
-	var fileextension = ".jpg";
-	$.ajax({
-	    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-	    url: dir,
-	    success: function (data) {
-	        //create array of all jpg file names in the page
-	        var files = $(data).find("a:contains(" + fileextension + ")");	       
-	        var randomFile = files[Math.floor(Math.random()*files.length)];
-	        var filename = randomFile.href.replace(window.location.host, "").replace("http:///", "");
-	        var datename = filename.replace(/%20/g, " ").replace("Photo on", "").replace(".jpg","");
-
-	        $(".container").append(
-            	$("<div class=\"imgwrap\"><img id=\"hank\" src=" + dir + filename + "></img><span class=\"date\">" + datename + "</span></div>") 
-            );
-            $(".container > .imgwrap > img").load( function(){
-            	$(".container").addClass("loaded");
-            	resizeImage();		
-            });      
-	    }
-	});
-
-
+	};	
+	resizeImage();
 // call resizeImage on window load and resize 				
 	win.bind({
 	    load: function() {
@@ -117,8 +100,9 @@
 	      resizeImage();
 	    }
 	});
-	win.click(function(){
+	$(".container").click(function(){
 		location.reload();
+		//$(this).prepend("<img src=\"Pictures/rotate.php\" alt=\"Header\" />");
 	})
 
  </script>

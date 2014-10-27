@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"all",
+				"allFilesArray"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"resize",
+				"resizeImage"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"win",
+				"window"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
 				"border-r",
 				"border-right"
 			],
@@ -40,10 +76,6 @@
 				"width"
 			],
 			[
-				"mar",
-				"margin-right"
-			],
-			[
 				"pa",
 				"padding"
 			],
@@ -72,10 +104,6 @@
 				"box-shadow"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"trans",
 				"translate3d"
 			],
@@ -90,10 +118,6 @@
 			[
 				"tra",
 				"translate3d"
-			],
-			[
-				"le",
-				"letter-spacing"
 			],
 			[
 				"di",
@@ -210,10 +234,6 @@
 			[
 				"tutorial",
 				"tutorialText1"
-			],
-			[
-				"hi",
-				"height"
 			],
 			[
 				"ste",
@@ -492,28 +512,8 @@
 				"move-the-cloud"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"ov",
 				"overflow"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"uor",
-				"uor-blue"
-			],
-			[
-				"submen",
-				"submenu-mega"
-			],
-			[
-				"i",
-				"inherit"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1382,
+				"buffer_size": 2926,
 				"line_ending": "Unix"
 			}
 		}
@@ -531,9 +531,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 287.0,
 		"selected_items":
 		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"Pa",
 				"Package Control: Install Package"
@@ -547,15 +559,11 @@
 				"Snippet: html"
 			],
 			[
-				"Snippet: ",
-				"Snippet: html"
-			],
-			[
 				"ht",
 				"HTML: Wrap Selection With Tag"
 			]
 		],
-		"width": 449.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -572,6 +580,8 @@
 	},
 	"file_history":
 	[
+		"/Users/simonfloter/selfies/Pictures/index.html",
+		"/Users/simonfloter/selfies/Pictures/htaccess",
 		"/Users/simonfloter/Dropbox/floetenmusik.com/css/floetenstyle.css",
 		"/Users/simonfloter/Dropbox/floetenmusik.com/work/zyxel-advertising.html",
 		"/Users/simonfloter/Dropbox/floetenmusik.com/work/university-of-roehampton.html",
@@ -712,6 +722,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"imgwrap",
+			"randomFile",
+			"filename",
 			"<li><a href=\"/contactform.php\"><i class=\"icon-pencil icon-white\"></i> contact</a></li>",
 			";\n",
 			"work-thumb h3",
@@ -836,10 +849,7 @@
 			"transformEmitter",
 			"crashEmitter",
 			"length",
-			"supermode",
-			"hit_score_text",
-			"textur",
-			"superTurdA"
+			"supermode"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -875,15 +885,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1382,
+						"buffer_size": 2926,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2300,
+								2300
 							]
 						],
 						"settings":
@@ -892,7 +902,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1645.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
